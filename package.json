@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "precommit": "npm run lint",
-    "cover_test": "rm -rf ./coverage && ng test --no-watch --code-coverage",
+    "cover_test": "rm -rf ./coverage && ng test --watch=false --progress=false --browsers=ChromeHeadlessCI --code-coverage",
     "coveralls": "cat ./coverage/Icov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "private": true,
