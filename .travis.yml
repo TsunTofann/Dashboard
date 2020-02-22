@@ -15,7 +15,7 @@ install:
   - npm install
 
 script:
-  - ng test:cover --watch=false --progress=false --browsers=ChromeHeadlessCI
+  - ng cover_test --watch=false --progress=false --browsers=ChromeHeadlessCI
   - ng test --watch=false --progress=false --browsers=ChromeHeadlessCI
   - ng e2e --protractor-config=./e2e/protractor-ci.conf.js
 
